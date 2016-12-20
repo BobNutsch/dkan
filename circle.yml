@@ -55,7 +55,7 @@ dependencies:
     # Run a webserver using drush.
     - 'PATH=/home/ubuntu/.config/composer/vendor/bin:$PATH ahoy drush --yes runserver :8888':
         background: true
-    - ahoy drush en -y dkan_workflow
+    - cd /var/www/docroot && drush en -y dkan_workflow
 
     # Setup display for selenium
     #- sh -e /etc/init.d/xvfb start
